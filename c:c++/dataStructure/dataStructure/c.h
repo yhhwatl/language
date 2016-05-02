@@ -22,5 +22,9 @@
 #include <ctime>
 #include <cstdarg>//提供宏 va_start,va_arg,va_end 用于参数变长
 #include <assert.h>
-using namespace std;         
+using namespace std;
+void YHlog(const char* msg)
+{
+    cout<<msg<<endl;
+}
 #endif /* c_h */
