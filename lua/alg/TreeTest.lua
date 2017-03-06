@@ -50,6 +50,6 @@ end
 -- transLMR(n1) -- 4251637
 -- transMLR(n1) -- 1245367
 -- transRML(n1) -- 7361524
-print(str)
+-- print(str)
 
 
