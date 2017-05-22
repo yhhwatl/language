@@ -17,8 +17,8 @@
 		038DCBED1CD7669C002F8026 /* F4-8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 038DCBE31CD7669C002F8026 /* F4-8.txt */; };
 		038DCBEE1CD7669C002F8026 /* F4-9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 038DCBE41CD7669C002F8026 /* F4-9.txt */; };
 		038DCBEF1CD7669C002F8026 /* F4-10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 038DCBE51CD7669C002F8026 /* F4-10.txt */; };
-		038DCBF31CD789B5002F8026 /* RecursionMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038DCBF21CD789B5002F8026 /* RecursionMain.cpp */; };
 		0780D12C1C2FCDBB00E9C9AF /* f1-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0780D12A1C2FCB6600E9C9AF /* f1-1.txt */; };
+		DFFFAFED1E87F7FF000404FE /* AStrTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFFFAFEC1E87F7FF000404FE /* AStrTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +72,7 @@
 		07CE79971C37B64E00D62107 /* Evaluate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Evaluate.h; path = stack/Evaluate.h; sourceTree = "<group>"; };
 		07CE79981C37CDBE00D62107 /* expressMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = expressMain.cpp; path = stack/expressMain.cpp; sourceTree = "<group>"; };
 		07CE799A1C37CFF500D62107 /* Hanoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Hanoi.h; path = stack/Hanoi.h; sourceTree = "<group>"; };
+		DFFFAFEC1E87F7FF000404FE /* AStrTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AStrTest.cpp; path = string/AStrTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		0780D11A1C2F7E4300E9C9AF /* dataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				DFFFAFEE1E87F807000404FE /* string */,
 				038DCBF01CD78967002F8026 /* recursion */,
 				03DE91EB1CC3C82A003D00EC /* tree */,
 				07CE79921C37687300D62107 /* stack */,
@@ -191,6 +193,14 @@
 				030271E11C3EA268002E0DD4 /* Point.h */,
 			);
 			name = stack;
+			sourceTree = "<group>";
+		};
+		DFFFAFEE1E87F807000404FE /* string */ = {
+			isa = PBXGroup;
+			children = (
+				DFFFAFEC1E87F7FF000404FE /* AStrTest.cpp */,
+			);
+			name = string;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				038DCBF31CD789B5002F8026 /* RecursionMain.cpp in Sources */,
+				DFFFAFED1E87F7FF000404FE /* AStrTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

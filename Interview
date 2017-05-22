@@ -1,0 +1,160 @@
+1.把一个0-1串（只包含0和1的串）进行排序，
+你可以交换任意两个位置，问最少交换的次数？
+local str = {0,1,0,0,1,0,1,0,1,1,0,1,1,0,1,1,1}
+local len = #(str)
+local i,j = 1+1,len-1
+local count = 0
+while i ~=j do
+	for k=i,j do
+		i = k
+		if str[k] == 1 then
+			break
+		end
+	end
+	for k=j,i,-1 do
+		j = k
+		if str[k] == 0 then
+			break
+		end
+	end
+	local t = str[i]
+	str[i] = str[j]
+	str[j] = t
+	count = count + 1
+end
+for k,v in pairs(str) do
+	print(k,v)
+end
+print("count: ",count)
+
+2.删除一个字符串中所有的a,并且复制所有的b.
+注：字符串足够大
+
+function S2T( str )
+	local t = type(str)
+	print(0)
+	if t == "nil" or str == "" then 
+		return nil 
+	elseif t == "number" or t == "boolean" or t == "string" then
+		str = tostring(str)
+	end
+	local ret = "return "..str
+	local func = loadstring(ret)
+	t = func()
+	if t == nil then 
+		t = {}
+		for i=1,#str do
+			table.insert(t,string.sub(str,i,i))
+		end
+		return t
+	else
+		return t
+	end
+end
+local str = S2T("angelbaby")
+local n = 1
+for i=1,#str do
+	if str[i] ~= 'a' then
+		str[n] = str[i]
+		n = n + 1
+	end
+end
+for i=n,#str do
+	str[i] = nil
+end
+for i=#str,1,-1 do
+	if str[i] == 'b' then
+		for j=#str,i,-1 do
+			str[j+1] = str[j]
+		end
+		str[i] = 'b' 
+	end
+end
+for k,v in pairs(str) do
+	print(k,v)
+end
+3.如何把字符串的空格变成‘%20’？
+注：字符串数组足够大
+local str = {'a',' ','b',' ','c'}
+for i=#str,1,-1 do
+	if str[i] == ' ' then
+		for j=#str,i,-1 do
+			str[j+2] = str[j]
+		end
+		str[i+2] = '0'
+		str[i+1] = '2'
+		str[i] = '%'
+	end
+end
+for i=1,#str do
+	print(str[i])
+end
+4.一个字符串只包含*和数字，请把它的*号放到开头
+注：不改变数字顺序
+local str = {'*','1','2','*','*','3'}
+for i=1,#str do
+	for j=1,#str-1 do
+		if str[j] == '*' and str[j+1] ~= '*' then
+			local x = str[j]
+			str[j] = str[j+1]
+			str[j+1] = x
+		else
+			j = j + 1
+		end
+	end
+end
+for i=1,#str do
+	print(str[i])
+end
+local i,j = 1,#str
+while true do
+	for k=i,#str do
+		if str[i] =='*' then
+			break
+		end
+		i = i + 1
+	end
+	for k=j,1,-1 do
+		if str[j] ~= '*' then
+			break
+		end
+		j = j - 1
+	end
+	if i >= j then break end
+	local x = str[i]
+	str[i] = str[j]
+	str[j] = x
+end
+for n=1,#str do
+	print(str[n])
+end
+
+5.翻转句子中的单词，单词内容不变
+例如：I‘m a student 变为 student a I'm
+
+local str = "I'm a student"
+function split( s,flag )
+	local str = s
+	local i,j = 1,1
+	local t = {}
+	if not string.find(str,flag) then
+		return t
+	end
+	while true do
+		j = string.find(str,flag)
+		print(j)
+		if j == nil then table.insert(t,str) break  end
+		local temp = string.sub(str,i,j-1)
+		table.insert(t,temp)
+		print(i,temp)
+		str = string.sub(str,j+1,#str)
+		print(i,j,str)
+	end
+	return t
+end
+local t = split(str," ")
+local s = ""
+for i=#t,1,-1 do
+	s = s .. t[i] .. " "
+end
+print(s)
