@@ -1,0 +1,15 @@
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.csproj.AssemblyReference.cache
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.AssemblyInfoInputs.cache
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.AssemblyInfo.cs
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.csproj.CoreCompileInputs.cache
+/Users/yanghh/Documents/yanghh/CShap/bin/Debug/net5.0/CShap.deps.json
+/Users/yanghh/Documents/yanghh/CShap/bin/Debug/net5.0/CShap.runtimeconfig.json
+/Users/yanghh/Documents/yanghh/CShap/bin/Debug/net5.0/CShap.runtimeconfig.dev.json
+/Users/yanghh/Documents/yanghh/CShap/bin/Debug/net5.0/CShap.dll
+/Users/yanghh/Documents/yanghh/CShap/bin/Debug/net5.0/ref/CShap.dll
+/Users/yanghh/Documents/yanghh/CShap/bin/Debug/net5.0/CShap.pdb
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.dll
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/ref/CShap.dll
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.pdb
+/Users/yanghh/Documents/yanghh/CShap/obj/Debug/net5.0/CShap.genruntimeconfig.cache
